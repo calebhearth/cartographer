@@ -1,0 +1,40 @@
+{
+    "com" : {
+	    "isA" : "interface",
+	    "example" : {
+	        "isA" : "interface",
+		    "helloworld" : {
+	            "isA" : "interface",
+                "HelloWorldMain" : {
+	                "isA" : "class",
+                    "main" : {
+	                    "isA" : "method",
+                        "access" : "public",
+					    "modifiers" : [
+			    		    "static",
+                        ],
+                        "return" : "void",
+						"arguments" {
+						    "args" : "java.lang.String[]",
+						},
+					},
+                    "printString" : {
+	                    "isA" : "method",
+                        "access" : "private",
+					    "modifiers" : [],
+                        "return" : "void",
+						"arguments" {
+						    "printMe" : "java.lang.String",
+						},
+					},
+                    "helloWorld" : {
+					    "isA" : "method",
+						"access" : "private",
+						"modifiers" : [],
+						"type" : "java.lang.String",
+					},
+                },
+            },
+        },
+    },
+}

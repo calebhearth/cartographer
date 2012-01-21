@@ -1,0 +1,44 @@
+CARTOGRAPHER JFORM (JSON) SCHEMA
+
+the root of a JFORM document is an array of namespace objects
+
+### namespace
+"name": string
+"type": string
+"children": array of class , variable, and function objects
+"modifiers": array of strings
+
+### variable
+"valueType": string
+"type": string
+"name": string
+"modifiers": array of strings
+
+### function
+"name": string
+"type": string
+"modifiers": array of strings
+"arguments": array of argument objects
+"returnType": string
+
+### argument
+"type": string
+"valueType": string
+"name": string
+"modifiers": string
+
+### class
+"type": string
+"name": string
+"modifiers": array of strings
+"interfaces": array of strings
+"superclasses": array of strings
+"members": array of class , variable, and function objects
+
+### interface
+"type": string
+"name": string
+"modifiers": array of strings
+"superinterfaces": array of strings
+"members": array of class , variable, and function objects
+

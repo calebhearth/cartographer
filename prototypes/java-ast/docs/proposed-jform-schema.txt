@@ -1,44 +1,61 @@
-CARTOGRAPHER JFORM (JSON) SCHEMA
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+JSON-AST SPECIFICATION
 
-the root of a JFORM document is an array of namespace objects
+1 BASIC CONSTRAINTS
 
-### namespace
-"name": string
-"type": string
-"children": array of class , variable, and function objects
-"modifiers": array of strings
+A JSON-AST document is a javascript object notation description of an abstract syntax tree.
+A JSON-AST document consists primarily of JSON objects representing elements of a syntax tree,
+such objects shall hereafter be referred to as "entities".
 
-### variable
-"valueType": string
-"type": string
-"name": string
-"modifiers": array of strings
+All entities shall conform to the following basic model:
+{
+  "identifier" : <a string representation of the declared identifier for this entity, or null>,
+  "entity-type" : <a non-nullable string, naming a type of entity (see 1.2)>,
+  "modifiers" : [ <zero or more strings representing source level modifiers of the entity> ],
+  <any number of other entity-type specific name-value pairs>
+}
 
-### function
-"name": string
-"type": string
-"modifiers": array of strings
-"arguments": array of argument objects
-"returnType": string
+The root of a JSON-AST document must be a JSON array of namespace entities.
 
-### argument
-"type": string
-"valueType": string
-"name": string
-"modifiers": string
+2 ENTITY CATALOG
 
-### class
-"type": string
-"name": string
-"modifiers": array of strings
-"interfaces": array of strings
-"superclasses": array of strings
-"members": array of class , variable, and function objects
+2.1 namespace
 
-### interface
-"type": string
-"name": string
-"modifiers": array of strings
-"superinterfaces": array of strings
-"members": array of class , variable, and function objects
+This entity represents a grouping of symbols. Depending upon the source language these may be known as name scopes,
+packages, modules, or namespaces.
+
+A namespace entity adds the following name-value pairs to the basic entity model:
+{
+  "members": [ <zero or more variable, function, or class entities> ]
+}
+
+2.2 variable
+
+This entity represents a variable, argument, or constant.
+
+A variable entity adds the following name-value pairs to the basic entity model:
+{
+  "type": <a nullable string naming the primitive or class type of this entity>
+}
+
+2.3 function
+
+This entity represents a procedure, function, or method.
+
+A function entity adds the following name-value pairs to the basic entity model:
+{
+  "arguments": [ <zero or more variable entities representing the arguments to be passed in to this function> ],
+  "return-type": <a nullable string representing the type of the thing returned from a call to this function>
+}
+
+2.4 class
+
+This entity represents a class or interface.
+
+A class entity adds the following name-value pairs to the basic entity model:
+{
+  "superclasses": [ <zero or more strings naming the superclass(es) of this class> ],
+  "members": [ <zero or more variable, function, or class entities representing the members of this class> ]
+}
+
 

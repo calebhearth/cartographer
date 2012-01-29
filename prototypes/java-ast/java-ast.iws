@@ -62,10 +62,19 @@
       <file leaf-file-name="JavaSyntaxTreeGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/JavaSyntaxTreeGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="43" selection-start="3038" selection-end="3038" vertical-scroll-proportion="0.7198953">
+            <state line="111" column="113" selection-start="4492" selection-end="4492" vertical-scroll-proportion="0.35006273">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Interface.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Interface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,9 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/AbstractSourceTreeVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="83" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,9 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Class.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="22" column="0" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,9 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Namespace.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="36" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,9 +119,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Node.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="39" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,6 +187,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,9 +279,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,14 +437,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="943" height="1024" extended-state="0" />
+    <frame x="0" y="22" width="1546" height="1024" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39916405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39916405" sideWeight="0.998713" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -451,12 +451,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19127516" sideWeight="0.8631139" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34078214" sideWeight="0.6008359" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1368861" sideWeight="0.9956663" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1368861" sideWeight="0.9956663" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -513,11 +514,6 @@
         <state line="5" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.08196721" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Interface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="17" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0" />
@@ -533,47 +529,24 @@
         <state line="4" column="0" selection-start="96" selection-end="159" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Namespace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/proposed-jform-schema.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="35" selection-start="847" selection-end="847" vertical-scroll-proportion="0.6627155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/AbstractSourceTreeVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="83" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="41" column="35" selection-start="847" selection-end="847" vertical-scroll-proportion="0.6627155" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="22" column="0" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Namespace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="36" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="39" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Variable.java">
@@ -581,9 +554,19 @@
         <state line="10" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/AbstractSourceTreeVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="83" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/beans/Interface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/wakka/protean/cartographer/prototypes/JavaSyntaxTreeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="43" selection-start="3038" selection-end="3038" vertical-scroll-proportion="0.7198953">
+        <state line="111" column="113" selection-start="4492" selection-end="4492" vertical-scroll-proportion="0.35006273">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

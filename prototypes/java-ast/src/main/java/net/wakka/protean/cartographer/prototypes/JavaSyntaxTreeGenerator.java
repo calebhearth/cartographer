@@ -2,6 +2,7 @@ package net.wakka.protean.cartographer.prototypes;
 
 import com.sun.source.tree.*;
 import com.sun.source.util.JavacTask;
+import com.sun.tools.javac.tree.JCTree;
 import net.wakka.protean.cartographer.prototypes.beans.*;
 import net.wakka.protean.cartographer.prototypes.beans.Class;
 import org.codehaus.jackson.map.DeserializationConfig;
@@ -69,7 +70,7 @@ public class JavaSyntaxTreeGenerator extends AbstractSourceTreeVisitor<Void,Void
     ObjectMapper mapper = new ObjectMapper();
     mapper.configure(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     FileWriter fw = new FileWriter("target/java-ast.json");
-    fw.write(mapper.writeValueAsString(namespaces));
+    fw.write(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(namespaces));
     fw.flush();
     fw.close();
   }
@@ -103,6 +104,7 @@ class NamespaceChildVisitor extends AbstractSourceTreeVisitor<Void, Namespace> {
     Class clazz = new Class();
     clazz.setName(classTree.getSimpleName().toString());
     for(Modifier modifier: classTree.getModifiers().getFlags()) clazz.getModifiers().add(modifier.toString());
+    if ((((JCTree.JCModifiers) classTree.getModifiers()).flags & (1L << 9)) != 0) clazz.getModifiers().add("interface");
     if(classTree.getExtendsClause() != null) classTree.getExtendsClause().accept(new ClassExtendsVisitor(), clazz);
     for(Tree tree: classTree.getMembers()) tree.accept(new ClassChildVisitor(), clazz);
     data.getChildren().add(clazz);
@@ -143,5 +145,36 @@ class ClassChildVisitor extends AbstractSourceTreeVisitor<Void,Class> {
     function.setName(methodTree.getName().toString());
     data.getMembers().add(function);
     return null;
+  }
+}
+
+/** TEST CODE **/
+
+interface Doer {
+  public void doStuff();
+  public void doThings();
+  public void doOver();
+}
+
+abstract strictfp interface OverDoer extends Doer {
+  public void doIt();
+  public void doItAgain();
+}
+
+class ConcreteDoer implements OverDoer {
+
+  public void doIt() {
+  }
+
+  public void doItAgain() {
+  }
+
+  public void doStuff() {
+  }
+
+  public void doThings() {
+  }
+
+  public void doOver() {
   }
 }

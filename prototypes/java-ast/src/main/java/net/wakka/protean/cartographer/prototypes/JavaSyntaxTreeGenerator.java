@@ -19,7 +19,8 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class JavaSyntaxTreeGenerator extends AbstractSourceTreeVisitor<Void,Void> {
+public class JavaSyntaxTreeGenerator
+  extends AbstractSourceTreeVisitor<Void,Void> {
 
   public static void main(String[] args) throws IOException {
     System.out.println("### Java Abstract Syntax Tree Generator");
@@ -107,7 +108,7 @@ class NamespaceChildVisitor extends AbstractSourceTreeVisitor<Void, Namespace> {
     if ((((JCTree.JCModifiers) classTree.getModifiers()).flags & (1L << 9)) != 0) clazz.getModifiers().add("interface");
     if(classTree.getExtendsClause() != null) classTree.getExtendsClause().accept(new ClassExtendsVisitor(), clazz);
     for(Tree tree: classTree.getMembers()) tree.accept(new ClassChildVisitor(), clazz);
-    data.getChildren().add(clazz);
+    data.getMembers().add(clazz);
     return null;
   }
 
@@ -133,7 +134,7 @@ class ClassChildVisitor extends AbstractSourceTreeVisitor<Void,Class> {
   @Override
   public Void visitVariable(VariableTree variableTree, Class data) {
     Variable variable = new Variable();
-    variable.setName(variableTree.getName().toString());
+    variable.setIdentifier(variableTree.getName().toString());
     variable.setValueType(variableTree.getType().toString());
     data.getMembers().add(variable);
     return null;
@@ -142,7 +143,7 @@ class ClassChildVisitor extends AbstractSourceTreeVisitor<Void,Class> {
   @Override
   public Void visitMethod(MethodTree methodTree, Class data) {
     Function function = new Function();
-    function.setName(methodTree.getName().toString());
+    function.setIdentifier(methodTree.getName().toString());
     data.getMembers().add(function);
     return null;
   }

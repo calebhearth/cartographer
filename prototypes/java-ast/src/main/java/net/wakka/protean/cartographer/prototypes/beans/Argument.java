@@ -4,7 +4,7 @@ public class Argument extends Node {
 
   public Argument() {
     super();
-    setType("argument");
+    setEntityType("argument");
   }
 
   private String valueType;

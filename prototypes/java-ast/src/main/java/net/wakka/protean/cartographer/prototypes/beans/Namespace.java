@@ -7,28 +7,28 @@ public class Namespace extends Node {
 
   public Namespace() {
     super();
-    setType("namespace");
-    setChildren(new LinkedList<Node>());
+    setEntityType("namespace");
+    setMembers(new LinkedList<Node>());
   }
 
-  private List<Node> children;
+  private List<Node> members;
 
-  public List<Node> getChildren() {
-    return children;
+  public List<Node> getMembers() {
+    return members;
   }
 
-  public void setChildren(List<Node> children) {
-    this.children = children;
+  public void setMembers(List<Node> members) {
+    this.members = members;
   }
 
   @Override
   public boolean equals(Object o) {
-    return Namespace.class.isInstance(o) && ((Namespace)o).getName().equals(this.getName());
+    return Namespace.class.isInstance(o) && ((Namespace)o).getIdentifier().equals(this.getIdentifier());
   }
 
   @Override
   public int hashCode() {
-    return getName() == null ? 0 : getName().hashCode();
+    return getIdentifier() == null ? 0 : getIdentifier().hashCode();
   }
 
 }

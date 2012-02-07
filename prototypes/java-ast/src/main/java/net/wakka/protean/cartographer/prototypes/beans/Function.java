@@ -6,7 +6,7 @@ public class Function extends Node {
 
   public Function() {
     super();
-    setType("function");
+    setEntityType("function");
   }
 
   private List<Argument> arguments;

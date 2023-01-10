@@ -7,23 +7,13 @@ public class Class extends Node {
 
   public Class() {
     super();
-    setType("class");
-    interfaces = new LinkedList<String>();
+    setEntityType("class");
     superclasses = new LinkedList<String>();
     members = new LinkedList<Node>();
   }
 
-  private List<String> interfaces;
   private List<String> superclasses;
   private List<Node> members;
-
-  public List<String> getInterfaces() {
-    return interfaces;
-  }
-
-  public void setInterfaces(List<String> interfaces) {
-    this.interfaces = interfaces;
-  }
 
   public List<String> getSuperclasses() {
     return superclasses;

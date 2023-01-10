@@ -4,17 +4,17 @@ public class Variable extends Node {
 
   public Variable() {
     super();
-    setType("variable");
+    setEntityType("variable");
   }
 
-  private String valueType;
+  private String type;
 
-  public String getValueType() {
-    return valueType;
+  public String getType() {
+    return type;
   }
 
-  public void setValueType(String valueType) {
-    this.valueType = valueType;
+  public void setType(String type) {
+    this.type = type;
   }
 
 }

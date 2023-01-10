@@ -9,24 +9,24 @@ public abstract class Node {
     setModifiers(new LinkedList<String>());
   }
 
-  private String name;
-  private String type;
+  private String identifier;
+  private String entityType;
   private List<String> modifiers;
 
-  public String getName() {
-    return name;
+  public String getIdentifier() {
+    return identifier;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setIdentifier(String identifier) {
+    this.identifier = identifier;
   }
 
-  public String getType() {
-    return type;
+  public String getEntityType() {
+    return entityType;
   }
 
-  public void setType(String type) {
-    this.type = type;
+  public void setEntityType(String entityType) {
+    this.entityType = entityType;
   }
 
   public List<String> getModifiers() {

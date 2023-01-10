@@ -1,40 +1,57 @@
 {
-    "com" : {
-	    "isA" : "interface",
-	    "example" : {
-	        "isA" : "interface",
-		    "helloworld" : {
-	            "isA" : "interface",
-                "HelloWorldMain" : {
-	                "isA" : "class",
-                    "main" : {
-	                    "isA" : "method",
-                        "access" : "public",
-					    "modifiers" : [
-			    		    "static",
-                        ],
-                        "return" : "void",
-						"arguments" {
-						    "args" : "java.lang.String[]",
-						},
-					},
-                    "printString" : {
-	                    "isA" : "method",
-                        "access" : "private",
-					    "modifiers" : [],
-                        "return" : "void",
-						"arguments" {
-						    "printMe" : "java.lang.String",
-						},
-					},
-                    "helloWorld" : {
-					    "isA" : "method",
-						"access" : "private",
-						"modifiers" : [],
-						"type" : "java.lang.String",
-					},
-                },
-            },
-        },
-    },
+  "identifier": "pro",
+  "entity-type": "namespace",
+  "modifiers": [],
+  "members": [
+    {
+      "identifier": "caleb",
+      "entity-type": "namespace",
+      "modifiers": [],
+      "members": [
+        {
+          "identifier": "protean",
+          "entity-type": "namespace",
+          "modifiers": [],
+          "members": [
+            {
+              "identifier": "cartographer",
+              "entity-type": "namespace",
+              "modifiers": [],
+              "members": [
+                {
+                  "identifier": "hello-world",
+                  "entity-type": "namespace",
+                  "modifiers": [],
+                  "members": [
+                    {
+                      "identifier": "HelloWorld",
+                      "entity-type": "class",
+                      "modifiers": [],
+                      "superclasses": [], 
+                      "members": [
+                        {
+                          "identifier": "main",
+                          "entity-type": "function",
+                          "modifiers": ["public", "static"],
+                          "arguments": [
+                            {
+                              "identifier": "args",
+                              "entity-type": "variable",
+                              "modifiers": [],
+                              "type": "String[]"
+                            }
+                          ],
+                          "return-type": "void"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

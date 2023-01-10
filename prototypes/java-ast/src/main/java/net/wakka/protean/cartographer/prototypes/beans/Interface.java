@@ -6,7 +6,7 @@ public class Interface extends Node {
 
   public Interface() {
     super();
-    setType("interface");
+    setEntityType("interface");
   }
 
   private List<Interface> superinterfaces;
